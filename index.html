@@ -1,39 +1,37 @@
-<!-- HTML/index.html -->
-
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador de Tienda</title>
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <h1>Tienda Virtual</h1>
+        <h1>Tienda Virtual</h1>
     </header>
 
     <main>
-      <section id="product-list">
-        <!-- Productos se cargarán dinámicamente aquí -->
-      </section>
+        <section id="product-list">
+            <!-- Productos se cargarán dinámicamente aquí -->
+        </section>
 
-      <section id="cart">
-        <h2>Carrito de Compras</h2>
-        <p id="cart-empty-message">El carrito está vacío.</p>
-        <ul id="cart-items">
-          <!-- Productos del carrito se cargarán dinámicamente aquí -->
-        </ul>
-        <div id="cart-summary">
-          <h3>Total: $<span id="total-amount">0.00</span></h3>
-          <button id="empty-cart-btn">Vaciar Carrito</button>
-          <button id="checkout-btn">COMPRAR</button>
-        </div>
-      </section>
+        <section id="cart">
+            <h2>Carrito de Compras</h2>
+            <p id="empty-cart-message" style="display: none;">El carrito está vacío.</p>
+            <ul id="cart-items">
+                <!-- Productos del carrito se cargarán dinámicamente aquí -->
+            </ul>
+            <div id="cart-summary">
+                <h3>Total: $<span id="total-amount">0.00</span></h3>
+                <button id="empty-cart-btn">Vaciar Carrito</button>
+                <button id="checkout-btn">COMPRAR</button>
+            </div>
+        </section>
     </main>
 
     <script src="./JavaScript/script.js"></script>
     <script src="./JavaScript/shoppingCart.js"></script>
-  </body>
+</body>
 </html>
